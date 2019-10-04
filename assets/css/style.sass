@@ -303,6 +303,7 @@ main
             padding: 15px 0
             font-family: 'Roboto', sans-serif
             font-size: 100px
+            font-weight: 900
             color: #EC0F44
           .titlewithslug
             h2
@@ -321,41 +322,67 @@ main
             padding: 20px 40px
             font-size: 15px
             font-family: "BPG Arial", sans-serif
-      
+      .slick-arrow
+        background: transparent
+        border: unset
+        position: absolute
+        z-index: 9
+        top: -100px
+        outline: none
+      .slick-prev
+        right: 50px
+      .slick-next
+        right: 0
       .slick-slide
+        outline: none
         overflow: hidden
-        height: 200px  !important
-        background: red !important
+        // background: red !important
         margin: 0 15px
-        position: relative
-        &:after
-          content: ""
-          position: absolute
-          left: 0
-          top: 0
-          width: 100%
-          height: 100%
-          background: rgba(27,32,44,0.35)
-        &:hover
-          cursor: pointer
+        .video_text-content
+          h4
+            color: #0E1119
+            font-size: 17px
+            font-family: 'Roboto', sans-serif
+            font-weight: 500
+            padding-top: 15px
+            margin: unset !important
+          p
+            color: #ADB5BD
+            font-family: "BPG Arial", sans-serif
+            font-size: 14px
+            margin: 10px 0
+        .video_image-content
+          position: relative
+          height: 200px  !important
           &:after
-            display: none
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background: rgba(27,32,44,0.35)
+          &:hover
+            cursor: pointer
+            &:after
+              display: none
+            img.playbutton
+              opacity: 0
+              transform: translate(-50%, -30px)
           img.playbutton
-            opacity: 0
-            transform: translate(-50%, -30px)
-        img.playbutton
-          transition: all 0.4s
-          position: absolute
-          left: 50%
-          top: 50%
-          transform: translate(-50%,-50%)
-        img.slider_back-image
-          height: 100%
-          width: 100%
-          object-fit: cover
-          object-position: center center
+            transition: all 0.4s
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+          img.slider_back-image
+            height: 100%
+            width: 100%
+            object-fit: cover
+            object-position: center center
       .manufacture-section-content, .new-added-video-content
         display: flex
+        position: relative
         flex-wrap: wrap
         .manufacture-brand-logo
           min-width: 10%
@@ -373,4 +400,26 @@ main
             &:hover
               background: #EC0F44
 
-
+footer
+  .container
+    .footer-menu_section
+      padding: 40px 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      nav.footer-nav
+        ul
+          list-style-type: none
+          display: flex
+          margin: unset !important
+          li
+            a
+              display: flex
+              padding: 15px 10px
+              color: #212529
+              font-size: 14px
+              font-family: "BPG Arial", sans-serif
+              text-decoration: none
+              align-items: center
+              &:hover
+                color: #EC0F44 !important
