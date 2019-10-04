@@ -1,0 +1,343 @@
+$large: 2500px
+$middle: 1900px
+$laptop_lg: 1400px
+$laptop_md: 1200px
+$laptop_sm: 1024px
+$tablet: 767px
+$mobile: 500px
+$iphone5: 330px
+
+=large
+  @media (max-width: #{$large})
+    @content
+=middle
+  @media (max-width: #{$middle})
+    @content
+=laptop_lg
+  @media (max-width: #{$laptop_lg})
+    @content
+=laptop_md
+  @media (max-width: #{$laptop_md})
+    @content
+=laptop_sm
+  @media (max-width: #{$laptop_sm})
+    @content
+=tablet
+  @media (max-width: #{$tablet})
+    @content
+=mobile
+  @media (max-width: #{$mobile})
+    @content
+=iphone5
+  @media (max-width: #{$iphone5})
+    @content
+// --------------------------------------
+    
+
+.container
+  max-width: 1400px !important
+  position: relative
+  z-index: 2
+header
+  position: relative
+  z-index: 1
+  width: 100%
+  .image-background
+    display: none
+  .video-background
+  section.top-header-background
+    position: absolute
+    z-index: 0
+    left: 0
+    top: 0
+    height: 850px
+    width: 100%
+    background: #000
+    overflow: hidden
+    // ---background VIDEO
+    video
+      width: 100%
+      min-height:  850px
+    // ---background IMAGE
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover !important
+    &:after
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba(27,32,44,0.1)
+  .container
+    display: flex
+    flex-direction: column
+    min-height: 850px
+    .top-header-menu_section
+      padding: 30px 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .top-header-logo
+      .top-header-burger
+        display: none
+        width: 35px
+        height: 35px
+        background: #fff
+        padding: 10px
+        align-content: space-between
+        +laptop_md
+          display: flex
+        span
+          display: flex
+          height: 2px
+          width: 100%
+          background: #1B202C
+      nav.top-header-nav
+        background: #fff !important
+        transition: all  0.9s 
+        +laptop_md
+          display: none
+        ul
+          list-style-type: none
+          display: flex
+          margin: unset !important
+          justify-content: flex-start
+          li.active-nav-link
+            a
+              color: #EC0F44 !important
+              &:after
+                background: #EC0F44 !important
+                bottom: -15px !important
+          li.compare-nav-link
+            a
+              background: #EC0F44
+              padding: 15px 30px
+              color: #fff
+              img
+                margin-right: 15px
+                height: 100%
+              &:hover
+                color: #fff !important
+                &:after
+                  display: none !important
+          li
+            padding: 15px 20px
+            position: relative
+            overflow: hidden
+            a
+              display: flex
+              padding: 15px 10px
+              color: #212529
+              font-size: 14px
+              font-family: "BPG Arial", sans-serif
+              text-decoration: none
+              align-items: center
+              position: relative
+              &:after
+                position: absolute
+                content: ""
+                width: 100%
+                height: 3px
+                left: 0
+                bottom: -15px
+                transition: all 0.25s
+              &:hover
+                color: #EC0F44 !important
+                &:after
+                  background: #EC0F44
+                  bottom: -15px !important
+    .top-header-body
+      flex: 1
+      width: 100%
+      display: flex
+      align-items: center
+      .body-content_section
+        h1
+          font-size: 60px
+          color: #fff
+          margin: 10px 0
+          font-family: "BPG Arial Caps", sans-serif
+        h3
+          font-size: 37px
+          color: #fff
+          margin: 10px 0
+          font-family: "BPG Arial Caps", sans-serif
+        .body-buttons_section
+          button
+            padding: 15px 50px
+            border: none
+            margin: 10px 20px 10px 0
+            a
+              color: #fff
+              font-size: 14px
+              font-family: "BPG Arial", sans-serif
+              text-decoration: none
+          &>:nth-child(1)
+            background: #EC0F44 
+            border: 2px solid #EC0F44
+          &>:nth-child(2)
+            border: 2px solid #fff
+            background: transparent  
+main
+  .container
+    transform: translateY(-150px)
+    .filter-menu-content
+      form
+        background: #fff
+        box-shadow: 0  0 20px rgba(0,0,0,0.2)
+        .filter-form-title-responsive
+          display: none
+          +laptop_sm
+            display: flex !important
+        .filter-form-title
+          +laptop_sm
+            display: none
+        .filter-form-title, .filter-form-title-responsive
+          padding: 40px 0 25px 0
+          margin: 0 40px
+          position: relative
+          &:after
+            position: absolute
+            content: ""
+            background: #EC0F44
+            height: 4px
+            width: 50px
+            left: 0
+            bottom: 0
+          h2
+            font-size: 24px
+            font-family: "BPG Arial Caps", sans-serif
+            color: #0E1119
+            margin: 6px 0
+          h4
+            color: #ADB5BD
+            font-size: 22px
+            font-family: "BPG Arial", sans-serif
+            margin: 6px 0
+        .filter-form-content
+          padding: 25px
+          display: flex
+          flex-direction: column
+          .filter-form-group._second-group
+            +laptop_sm
+              flex-direction: column
+            .group-content
+              +laptop_sm
+                flex-grow: 0 !important
+                width: 100% !important
+              .filter-input
+                +mobile
+                  flex-direction: column
+                input
+                  +mobile
+                    margin: 10px 0
+                    width: 100% !important
+          
+          .filter-form-group._first-group
+            +tablet
+              flex-direction: column
+            .group-content
+              +tablet
+                flex-grow: 0 !important
+                width: 100% !important
+          .filter-form-group
+            width: 100%
+            display: flex
+            padding: 15px 0
+            justify-content: space-between
+            .group-content
+              display: flex
+              flex-grow: 1
+              padding: 0 15px
+              flex-direction: column
+              label
+                font-size: 15px
+                font-family: "BPG Arial", sans-serif
+                span
+                  color: #ADB5BD
+              select, .filter-input input
+                outline: none
+                border: none
+                font-family: "BPG Arial", sans-serif
+                background: #F1F3F5
+                padding: 20px
+                width: 100%
+                font-size: 13px
+              .filter-input
+                display: flex
+                justify-content: space-between
+              .filter-input input
+                width: calc(50% - 8px)
+                &::placeholder
+                  font-size: 13px
+                  font-family: "BPG Arial", sans-serif
+        .filter-form-buttons
+          display: flex
+          justify-content: space-between
+          align-items: center
+          padding: 40px
+          input
+            border: none
+            font-family: "BPG Arial", sans-serif
+            font-size: 15px
+            color: #ADB5BD
+            background: none
+          &>:nth-child(2)
+            background: #EC0F44
+            padding: 15px 35px
+            color: #fff
+    .popular-manufacturer, .new-added-video
+      .manufacture-section-title, .new-added-video-title
+        padding-top: 90px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .title-leftside-content
+          display: flex
+          align-items: center
+          .accounting_section
+            margin-right: 10px
+            padding: 15px 0
+            font-family: 'Roboto', sans-serif
+            font-size: 100px
+            color: #EC0F44
+          .titlewithslug
+            h2
+              font-size: 24px
+              font-family: "BPG Arial Caps", sans-serif
+              color: #0E1119
+              margin-bottom: 15px
+            h4
+              color: #ADB5BD
+              font-size: 18px
+              font-family: "BPG Arial", sans-serif
+        .filterbrand
+          button
+            border: 1px solid #EC0F44
+            background: transparent
+            padding: 20px 40px
+            font-size: 15px
+            font-family: "BPG Arial", sans-serif
+      .manufacture-section-content, .new-added-video-content
+        display: flex
+        flex-wrap: wrap
+        .manufacture-brand-logo
+          min-width: 10%
+          a
+            display: flex
+            padding: 40px 20px
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: ease-in-out 0.4s
+            img
+              width: 60px
+            &:hover
+              background: #EC0F44
+
+

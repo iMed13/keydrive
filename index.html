@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Key Drive</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="assets/fonts/bpg-arial-master/css/bpg-arial.min.css">
+    <link rel="stylesheet" href="assets/fonts/bpg-arial-caps-master/css/bpg-arial-caps.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- header section start here -->
+    <header class="container-fluid">
+        <!-- background IMAGE section -->
+        <section class="top-header-background  image-background">
+            <img src="assets/media/slider.png" alt="">
+        </section>
+        <!-- background IMAGE section ending -->
+
+        <!-- background VIDEO section -->
+        <section class="top-header-background video-background">
+            <video id="top-header-background-video" autoplay currentTime=100>
+                <source src="assets/media/backgroun.webm" type="video/mp4">
+            </video>
+        </section>
+        <!-- background VIDEO section ending -->
+        <section class="container">
+            <!-- header menu -->
+            <div class="top-header-menu_section">
+                <div class="top-header-logo"><img src="assets/media/logo.png" alt=""></div>
+                <nav class="top-header-nav">
+                    <ul>
+                        <li class="active-nav-link"><a href="#">მთავარი</a></li>
+                        <li><a href="#">ჩვენ შესახებ</a></li>
+                        <li><a href="#">ვიდეოები</a></li>
+                        <li><a href="#">კატალოგი</a></li>
+                        <li><a href="#">კონტაქტი</a></li>
+                        <li class="compare-nav-link"><a href="#"> <img src="assets/media/compare.png"
+                                    alt="compare_image"> შედარება</a></li>
+                    </ul>
+                </nav>
+                <div class="top-header-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- header menu ending -->
+
+            <!-- header content -->
+            <div class="top-header-body">
+                <div class="body-content_section">
+                    <h1>ავტოკატალოგი</h1>
+                    <h3>დეტალური სფეციფიკაცია</h3>
+                    <div class="body-buttons_section">
+                        <button><a href="#">კატალოგი</a></button>
+                        <button><a href="#">შედარება</a> </button>
+                    </div>
+                </div>
+            </div>
+            <!-- header content ending -->
+        </section>
+    </header>
+    <!-- header section ending -->
+
+    <!-- main section start here -->
+    <main class="container-fluid">
+        <section class="container">
+            <!-- filter section -->
+            <div class="filter-menu-content">
+                <form action="">
+                    <div class="filter-form-title">
+                        <h2>გამოიყენე სწრაფი ძებნა</h2>
+                        <h4>მოძებნე შენი ოცნების მანქანა</h4>
+                    </div>
+                    <div class="filter-form-title-responsive">
+                        <h2>სწრაფი ძებნა</h2>
+                    </div>
+                    <div class="filter-form-content">
+                        <!-- filter-form-group FIRST -->
+                        <div class="filter-form-group _first-group">
+                            <!-- manufacturer -->
+                            <div class="group-content">
+                                <label for="#manufacturer">მწარმოებელი</label>
+                                <select name="manufacturer" id="manufacturer">
+                                    <option value="">volvo</option>
+                                    <option value="">mercedes</option>
+                                    <option value="">BMW</option>
+                                    <option value="">camaro</option>
+                                    <option value="">dodge</option>
+                                    <option value="">mustang</option>
+                                </select>
+                            </div>
+                            <!-- car model -->
+                            <div class="group-content">
+                                <label for="#carmodel">აირჩიე მოდელი</label>
+                                <select name="carmodel" id="carmodel">
+                                    <option value="">volvo</option>
+                                    <option value="">mercedes</option>
+                                    <option value="">BMW</option>
+                                    <option value="">camaro</option>
+                                    <option value="">dodge</option>
+                                    <option value="">mustang</option>
+                                </select>
+                            </div>
+
+                            <!-- car model -->
+                            <div class="group-content">
+                                <label for="#allcar">ავტომობილები</label>
+                                <select name="allcar" id="allcar">
+                                    <option value="">volvo</option>
+                                    <option value="">mercedes</option>
+                                    <option value="">BMW</option>
+                                    <option value="">camaro</option>
+                                    <option value="">dodge</option>
+                                    <option value="">mustang</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- filter-form-group SECOND -->
+                        <div class="filter-form-group _second-group">
+                            <!-- manufacture date -->
+                            <div class="group-content">
+                                <label for="#manufacturedate">გამოშვების წელი</label>
+                                <div class="filter-input" id="manufacturedate">
+                                    <input type="text" placeholder="-დან">
+                                    <input type="text" placeholder="-მდე">
+                                </div>
+                            </div>
+                            <!-- car price -->
+                            <div class="group-content">
+                                <label for="#carprice">ფასი <span>($)</span></label>
+                                <div class="filter-input" id="carprice">
+                                    <input type="text" placeholder="-დან">
+                                    <input type="text" placeholder="-მდე">
+                                </div>
+                            </div>
+                            <!-- car engine / motor -->
+                            <div class="group-content">
+                                <label for="#carengine">ძრავის მოცულობა</label>
+                                <div class="filter-input" id="carengine">
+                                    <input type="text" placeholder="-დან">
+                                    <input type="text" placeholder="-მდე">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-form-buttons">
+                        <input type="submit" name="additionalfilter" id="additionalfilter" value="+ დამატებითი ფილტრი">
+                        <input type="submit" name="filtersearch" id="filtersearch" value="ძიება">
+                    </div>
+                </form>
+            </div>
+            <!-- filter section ending -->
+
+            <!-- popular manufacturer section-->
+            <div class="popular-manufacturer">
+                <div class="manufacture-section-title">
+                    <div class="title-leftside-content">
+                        <div class="accounting_section">01</div>
+                        <div class="titlewithslug">
+                            <h2>პოპულარული მწარმოებლები</h2>
+                            <h4>მომხმარებლების მიერ ხშირად მოძებნილი მწარმოებლები</h4>
+                        </div>
+                    </div>
+                    <div class="filterbrand">
+                        <button>ყველა ბრენდი</button>
+                    </div>
+                </div>
+                <div class="manufacture-section-content">
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand1.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand2.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand3.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand4.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand5.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand3.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand4.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand1.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand2.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand5.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand1.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                    <!-- each popular brand section -->
+                    <div class="manufacture-brand-logo">
+                        <a href="#">
+                            <img src="assets/media/brand3.png" alt="">
+                        </a>
+                    </div>
+                    <!-- each popular brand section ending -->
+                </div>
+            </div>
+            <!-- popular manufacturer section ending-->
+
+            
+            <!-- new added video section-->
+            <div class="popular-manufacturer">
+                    <div class="manufacture-section-title">
+                        <div class="title-leftside-content">
+                            <div class="accounting_section">02</div>
+                            <div class="titlewithslug">
+                                <h2>პოპულარული მწარმოებლები</h2>
+                                <h4>მომხმარებლების მიერ ხშირად მოძებნილი მწარმოებლები</h4>
+                            </div>
+                        </div>
+                        <div class="filterbrand">
+                            <button>ყველა ბრენდი</button>
+                        </div>
+                    </div>
+                    <div class="manufacture-section-content">
+                        
+                    </div>
+                </div>
+                <!--  new added video section ending-->
+        </section>
+    </main>
+    <!-- main section ending -->
+
+    <!-- footer section start here -->
+    <footer>
+        <section>
+
+        </section>
+    </footer>
+    <!-- footer section ending -->
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
