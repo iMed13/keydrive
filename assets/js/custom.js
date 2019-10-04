@@ -1,6 +1,5 @@
 
 $( document ).ready(function() {
-  
     $("#top-header-background-video")[0].play(); 
 });
 $("#top-header-background-video")[0].autoplay = true;

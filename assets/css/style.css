@@ -517,6 +517,57 @@ main .container .popular-manufacturer .manufacture-section-title .filterbrand bu
   font-family: "BPG Arial", sans-serif;
 }
 
+main .container .popular-manufacturer .slick-slide, main .container .new-added-video .slick-slide {
+  overflow: hidden;
+  height: 200px  !important;
+  background: red !important;
+  margin: 0 15px;
+  position: relative;
+}
+
+main .container .popular-manufacturer .slick-slide:after, main .container .new-added-video .slick-slide:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 32, 44, 0.35);
+}
+
+main .container .popular-manufacturer .slick-slide:hover, main .container .new-added-video .slick-slide:hover {
+  cursor: pointer;
+}
+
+main .container .popular-manufacturer .slick-slide:hover:after, main .container .new-added-video .slick-slide:hover:after {
+  display: none;
+}
+
+main .container .popular-manufacturer .slick-slide:hover img.playbutton, main .container .new-added-video .slick-slide:hover img.playbutton {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -30px);
+          transform: translate(-50%, -30px);
+}
+
+main .container .popular-manufacturer .slick-slide img.playbutton, main .container .new-added-video .slick-slide img.playbutton {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .container .popular-manufacturer .slick-slide img.slider_back-image, main .container .new-added-video .slick-slide img.slider_back-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 main .container .popular-manufacturer .manufacture-section-content, main .container .popular-manufacturer .new-added-video-content, main .container .new-added-video .manufacture-section-content, main .container .new-added-video .new-added-video-content {
   display: -webkit-box;
   display: -ms-flexbox;

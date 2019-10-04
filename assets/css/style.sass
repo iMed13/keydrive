@@ -321,6 +321,39 @@ main
             padding: 20px 40px
             font-size: 15px
             font-family: "BPG Arial", sans-serif
+      
+      .slick-slide
+        overflow: hidden
+        height: 200px  !important
+        background: red !important
+        margin: 0 15px
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          background: rgba(27,32,44,0.35)
+        &:hover
+          cursor: pointer
+          &:after
+            display: none
+          img.playbutton
+            opacity: 0
+            transform: translate(-50%, -30px)
+        img.playbutton
+          transition: all 0.4s
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%,-50%)
+        img.slider_back-image
+          height: 100%
+          width: 100%
+          object-fit: cover
+          object-position: center center
       .manufacture-section-content, .new-added-video-content
         display: flex
         flex-wrap: wrap
