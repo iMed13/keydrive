@@ -30,7 +30,7 @@
 
 <body>
     <!-- header section start here -->
-    <header class="container-fluid">
+    <header >
         <!-- background IMAGE section -->
         <section class="top-header-background  image-background">
             <img src="assets/media/slider.png" alt="">
@@ -84,7 +84,7 @@
     <!-- header section ending -->
 
     <!-- main section start here -->
-    <main class="container-fluid">
+    <main >
         <section class="container">
             <!-- filter section -->
             <div class="filter-menu-content">
@@ -373,14 +373,13 @@
     <!-- main section ending -->
 
     <!-- footer section start here -->
-    <footer class="container-fluid">
+    <footer >
         <section class="container">
             <!-- footer menu -->
             <div class="footer-menu_section">
                 <div class="footer-logo"><img src="assets/media/logo.png" alt=""></div>
                 <nav class="footer-nav">
                     <ul>
-                        <li class="active-nav-link"><a href="#">მთავარი</a></li>
                         <li><a href="#">ჩვენ შესახებ</a></li>
                         <li><a href="#">ვიდეოები</a></li>
                         <li><a href="#">კატალოგი</a></li>
@@ -405,21 +404,26 @@
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
+                        arrows: false,
                         infinite: true
                     }
                 },
                 {
-                    breakpoint: 700,
+                    breakpoint: 800,
                     settings: {
+                        arrows: false,
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        
                     }
                 },
                 {
-                    breakpoint: 680,
+                    breakpoint: 500,
                     settings: {
+                        arrows: false,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        
                     }
                 }
             ],

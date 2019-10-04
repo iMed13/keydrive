@@ -3,6 +3,7 @@ $middle: 1900px
 $laptop_lg: 1400px
 $laptop_md: 1200px
 $laptop_sm: 1024px
+$laptop: 992px
 $tablet: 767px
 $mobile: 500px
 $iphone5: 330px
@@ -21,6 +22,9 @@ $iphone5: 330px
     @content
 =laptop_sm
   @media (max-width: #{$laptop_sm})
+    @content
+=laptop
+  @media (max-width: #{$laptop})
     @content
 =tablet
   @media (max-width: #{$tablet})
@@ -54,10 +58,23 @@ header
     width: 100%
     background: #000
     overflow: hidden
+    +laptop_sm
+      height: 600px
+    +tablet
+      height: 500px
+    +mobile
+      height: 400px
     // ---background VIDEO
     video
       width: 100%
-      min-height:  850px
+      height:  850px
+      object-fit: cover
+      +laptop_sm
+        height: 600px
+      +tablet
+        height: 500px
+      +mobile
+        height: 400px
     // ---background IMAGE
     img
       width: 100%
@@ -75,6 +92,12 @@ header
     display: flex
     flex-direction: column
     min-height: 850px
+    +laptop_sm
+      min-height: 600px
+    +tablet
+      min-height: 500px
+    +mobile
+      min-height: 400px
     .top-header-menu_section
       padding: 30px 0
       display: flex
@@ -160,12 +183,24 @@ header
           color: #fff
           margin: 10px 0
           font-family: "BPG Arial Caps", sans-serif
+          transform: all 0.4s
+          +laptop_sm
+            font-size: 50px
+          +tablet
+            font-size: 25px
         h3
           font-size: 37px
           color: #fff
           margin: 10px 0
           font-family: "BPG Arial Caps", sans-serif
+          transform: all 0.4s
+          +laptop_sm
+            font-size: 25px
+          +tablet
+            font-size: 15px
         .body-buttons_section
+          +tablet
+            display: none
           button
             padding: 15px 50px
             border: none
@@ -184,6 +219,10 @@ header
 main
   .container
     transform: translateY(-150px)
+    +laptop_sm
+      transform: translateY(-120px)
+    +tablet
+      transform: translateY(-80px)
     .filter-menu-content
       form
         background: #fff
@@ -192,6 +231,8 @@ main
           display: none
           +laptop_sm
             display: flex !important
+            h2  
+              font-size: 13px !important
         .filter-form-title
           +laptop_sm
             display: none
@@ -199,6 +240,8 @@ main
           padding: 40px 0 25px 0
           margin: 0 40px
           position: relative
+          +laptop_sm
+            padding: 15px 0 !important
           &:after
             position: absolute
             content: ""
@@ -207,6 +250,8 @@ main
             width: 50px
             left: 0
             bottom: 0
+            +laptop_sm
+              display: none
           h2
             font-size: 24px
             font-family: "BPG Arial Caps", sans-serif
@@ -221,6 +266,8 @@ main
           padding: 25px
           display: flex
           flex-direction: column
+          +laptop_sm
+            padding: 0 20px
           .filter-form-group._second-group
             +laptop_sm
               flex-direction: column
@@ -228,6 +275,7 @@ main
               +laptop_sm
                 flex-grow: 0 !important
                 width: 100% !important
+                padding: unset !important
               .filter-input
                 +mobile
                   flex-direction: column
@@ -243,6 +291,7 @@ main
               +tablet
                 flex-grow: 0 !important
                 width: 100% !important
+                padding: unset !important
           .filter-form-group
             width: 100%
             display: flex
@@ -256,6 +305,8 @@ main
               label
                 font-size: 15px
                 font-family: "BPG Arial", sans-serif
+                +tablet
+                  display: none
                 span
                   color: #ADB5BD
               select, .filter-input input
@@ -266,6 +317,8 @@ main
                 padding: 20px
                 width: 100%
                 font-size: 13px
+                +tablet
+                  margin: 7px 0
               .filter-input
                 display: flex
                 justify-content: space-between
@@ -279,25 +332,36 @@ main
           justify-content: space-between
           align-items: center
           padding: 40px
+          +laptop_sm
+            padding: 20px 
           input
             border: none
             font-family: "BPG Arial", sans-serif
             font-size: 15px
             color: #ADB5BD
             background: none
+            +laptop_sm
+              font-size: 12px
           &>:nth-child(2)
             background: #EC0F44
             padding: 15px 35px
             color: #fff
+            +laptop_sm
+              padding: 10px 30px
     .popular-manufacturer, .new-added-video
       .manufacture-section-title, .new-added-video-title
         padding-top: 90px
         display: flex
         align-items: center
         justify-content: space-between
+        +laptop_sm
+          flex-direction: column
+          overflow: hidden
         .title-leftside-content
           display: flex
           align-items: center
+          +laptop_sm
+            width: 100%
           .accounting_section
             margin-right: 10px
             padding: 15px 0
@@ -305,23 +369,44 @@ main
             font-size: 100px
             font-weight: 900
             color: #EC0F44
+            transition: all 0.5s
+            +tablet
+              transform: translateX(-20px)
+            +laptop_sm
+              font-size: 80px
+            +tablet
+              font-size: 70px
+
           .titlewithslug
             h2
               font-size: 24px
               font-family: "BPG Arial Caps", sans-serif
               color: #0E1119
               margin-bottom: 15px
+              +laptop_sm
+                font-size: 19px
+              +tablet
+                font-size: 16px
             h4
               color: #ADB5BD
               font-size: 18px
               font-family: "BPG Arial", sans-serif
+              +laptop_sm
+                font-size: 15px
+              +tablet
+                font-size: 12px
         .filterbrand
+          +laptop_sm
+            width: 100%
           button
             border: 1px solid #EC0F44
             background: transparent
             padding: 20px 40px
             font-size: 15px
             font-family: "BPG Arial", sans-serif
+            +laptop_sm
+              width: 100%
+              margin: 15px 0
       .slick-arrow
         background: transparent
         border: unset
@@ -333,6 +418,10 @@ main
         right: 50px
       .slick-next
         right: 0
+      // .slick-track
+      //   &>:nth-child(1)
+      //     +tablet
+      //       width: 300px !important
       .slick-slide
         outline: none
         overflow: hidden
@@ -386,6 +475,10 @@ main
         flex-wrap: wrap
         .manufacture-brand-logo
           min-width: 10%
+          transition: all 0.4s
+          +laptop
+            width: unset !important
+            flex-grow: 1
           a
             display: flex
             padding: 40px 20px
@@ -401,17 +494,27 @@ main
               background: #EC0F44
 
 footer
+  background: red
   .container
     .footer-menu_section
       padding: 40px 0
       display: flex
       justify-content: space-between
       align-items: center
+      .footer-logo
+        +tablet
+          display: none
       nav.footer-nav
+        +tablet
+          width: 100%
         ul
           list-style-type: none
           display: flex
           margin: unset !important
+          +tablet
+            width: 100%
+            justify-content: space-between
+            padding: unset
           li
             a
               display: flex
@@ -421,5 +524,7 @@ footer
               font-family: "BPG Arial", sans-serif
               text-decoration: none
               align-items: center
+              +tablet
+                font-size: 12px !important
               &:hover
                 color: #EC0F44 !important
