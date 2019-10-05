@@ -42,6 +42,9 @@ $iphone5: 330px
   max-width: 1400px !important
   position: relative
   z-index: 2
+  +tablet
+    padding: unset !important
+
 header
   position: relative
   z-index: 1
@@ -103,6 +106,8 @@ header
       display: flex
       align-items: center
       justify-content: space-between
+      +tablet
+        padding: 30px 15px
       .top-header-logo
       .top-header-burger
         display: none
@@ -177,6 +182,8 @@ header
       width: 100%
       display: flex
       align-items: center
+      +tablet
+        padding: 0 15px
       .body-content_section
         h1
           font-size: 60px
@@ -217,16 +224,20 @@ header
             border: 2px solid #fff
             background: transparent  
 main
+  position: relative
+  z-index: 3
+  transform: translateY(-150px)
+  +laptop_sm
+    transform: translateY(-120px)
+  +tablet
+    transform: translateY(-80px)
   .container
-    transform: translateY(-150px)
-    +laptop_sm
-      transform: translateY(-120px)
-    +tablet
-      transform: translateY(-80px)
     .filter-menu-content
       form
         background: #fff
         box-shadow: 0  0 20px rgba(0,0,0,0.2)
+        +tablet
+          margin: 0 15px
         .filter-form-title-responsive
           display: none
           +laptop_sm
@@ -348,9 +359,11 @@ main
             color: #fff
             +laptop_sm
               padding: 10px 30px
+    .new-added-video
+    .manufacture-section-title
+      padding-top: 90px
     .popular-manufacturer, .new-added-video
       .manufacture-section-title, .new-added-video-title
-        padding-top: 90px
         display: flex
         align-items: center
         justify-content: space-between
@@ -371,7 +384,9 @@ main
             color: #EC0F44
             transition: all 0.5s
             +tablet
+              padding: unset
               transform: translateX(-20px)
+              margin: unset !important
             +laptop_sm
               font-size: 80px
             +tablet
@@ -396,6 +411,8 @@ main
               +tablet
                 font-size: 12px
         .filterbrand
+          +tablet
+            padding: 0 15px
           +laptop_sm
             width: 100%
           button
@@ -473,12 +490,16 @@ main
         display: flex
         position: relative
         flex-wrap: wrap
+        +tablet
+          padding: 0 15px
         .manufacture-brand-logo
           min-width: 10%
           transition: all 0.4s
           +laptop
-            width: unset !important
+            width: unset 
             flex-grow: 1
+          +mobile
+            width: 50% !important
           a
             display: flex
             padding: 40px 20px
@@ -492,7 +513,33 @@ main
               width: 60px
             &:hover
               background: #EC0F44
-
+.slick-dots
+  list-style-type: none
+  display: flex
+  justify-content: center
+  padding: 40px 0
+  li.slick-active
+    button
+      position: relative
+      background: transparen !important
+      &::after
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        width: 100%
+        height: 3px
+        background: #EC0F44
+        animation: slickactive 0.2s linear
+        
+  li
+    button
+      border: none
+      width: 30px
+      height: 3px
+      background: #CED4DA
+      margin: 0 5px
+      border-radius: 3px
 footer
   .container
     .footer-menu_section
@@ -500,6 +547,8 @@ footer
       display: flex
       justify-content: space-between
       align-items: center
+      +tablet
+        padding: 35px 15px
       .footer-logo
         +tablet
           display: none
@@ -525,5 +574,6 @@ footer
               align-items: center
               +tablet
                 font-size: 12px !important
+                padding: unset !important
               &:hover
                 color: #EC0F44 !important
