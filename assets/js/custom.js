@@ -13,3 +13,4 @@ $(".filter-input").find("input").focus(function() {
 $(".filter-input").find("input").blur(function() {
     $(this).attr("placeholder", globalPlaceholder);  
 })
+// $(".slick-active.slick-center").first().siblings().css("width","360px")

@@ -826,11 +826,23 @@ main .container .popular-manufacturer .slick-slide .video_text-content h4, main 
   margin: unset !important;
 }
 
+@media (max-width: 500px) {
+  main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4 {
+    font-size: 13px;
+  }
+}
+
 main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p {
   color: #ADB5BD;
   font-family: "BPG Arial", sans-serif;
   font-size: 14px;
   margin: 10px 0;
+}
+
+@media (max-width: 500px) {
+  main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p {
+    font-size: 11px;
+  }
 }
 
 main .container .popular-manufacturer .slick-slide .video_image-content, main .container .new-added-video .slick-slide .video_image-content {
@@ -941,6 +953,18 @@ main .container .popular-manufacturer .manufacture-section-content .manufacture-
 
 main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a:hover, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a:hover, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a:hover, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a:hover {
   background: #EC0F44;
+}
+
+@media (max-width: 500px) {
+  .slick-list.draggable {
+    height: 260px;
+  }
+}
+
+@media (max-width: 500px) {
+  div.slick-active.slick-center {
+    width: 360px !important;
+  }
 }
 
 .slick-dots {

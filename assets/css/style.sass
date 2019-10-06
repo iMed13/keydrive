@@ -459,11 +459,15 @@ main
             font-weight: 500
             padding-top: 15px
             margin: unset !important
+            +mobile
+              font-size: 13px
           p
             color: #ADB5BD
             font-family: "BPG Arial", sans-serif
             font-size: 14px
             margin: 10px 0
+            +mobile
+              font-size: 11px
         .video_image-content
           position: relative
           height: 200px  !important
@@ -520,6 +524,14 @@ main
               width: 60px
             &:hover
               background: #EC0F44
+.slick-list.draggable
+  +mobile
+    height: 260px
+// div.slick-slide
+//   float: right !important
+div.slick-active.slick-center
+  +mobile
+    width: 360px !important
 .slick-dots
   list-style-type: none
   display: flex
