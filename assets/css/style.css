@@ -198,7 +198,7 @@ header .container .top-header-menu_section nav.top-header-nav ul li.active-nav-l
   bottom: 2px !important;
 }
 
-header .container .top-header-menu_section nav.top-header-nav ul li.compare-nav-link:hover {
+header .container .top-header-menu_section nav.top-header-nav ul li.compare-nav-link:hover a {
   color: #fff !important;
 }
 
