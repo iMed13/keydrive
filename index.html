@@ -15,21 +15,45 @@
     <link rel="stylesheet" href="assets/fonts/bpg-arial-caps-master/css/bpg-arial-caps.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15f60aad7d.js" crossorigin="anonymous"></script>
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<style>
-@keyframes slickactive {
-    0% {left: -20px;}
-    100%{left: 0;}
-}
-</style>
+    <style>
+        @keyframes slickactive {
+            0% {
+                left: -20px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+        @keyframes compareleft {
+            0% {
+                transform: translate(-8px, -3px);
+            }
+
+            100% {
+                transform: translate(0px, -3px);
+            }
+        }
+        @keyframes compareright {
+            0% {
+                transform: translate(8px, 3px);
+            }
+
+            100% {
+                transform: translate(0px, 3px);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- header section start here -->
-    <header >
+    <header>
         <!-- background IMAGE section -->
         <section class="top-header-background  image-background">
             <img src="assets/media/slider.png" alt="">
@@ -54,8 +78,13 @@
                         <li><a href="#">ვიდეოები</a></li>
                         <li><a href="#">კატალოგი</a></li>
                         <li><a href="#">კონტაქტი</a></li>
-                        <li class="compare-nav-link"><a href="#"> <img src="assets/media/compare.png"
-                                    alt="compare_image"> შედარება</a></li>
+                        <li class="compare-nav-link">
+                            <a href="#">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                     შედარება
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="top-header-burger">
@@ -83,7 +112,7 @@
     <!-- header section ending -->
 
     <!-- main section start here -->
-    <main >
+    <main>
         <section class="container">
             <!-- filter section -->
             <div class="filter-menu-content">
@@ -375,7 +404,7 @@
     <!-- main section ending -->
 
     <!-- footer section start here -->
-    <footer >
+    <footer>
         <section class="container">
             <!-- footer menu -->
             <div class="footer-menu_section">
@@ -416,7 +445,7 @@
                         arrows: false,
                         slidesToShow: 2,
                         slidesToScroll: 2,
-                        
+
                     }
                 },
                 {
@@ -427,7 +456,7 @@
                         slidesToScroll: 1,
                         infinite: true,
                         centerMode: true,
-                        
+
                     }
                 }
             ],
