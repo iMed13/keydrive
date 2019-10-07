@@ -126,19 +126,27 @@ header
       nav.top-header-nav
         background: #fff !important
         transition: all  0.9s 
+        position: relative
         +laptop_md
           display: none
+          
         ul
           list-style-type: none
           display: flex
           margin: unset !important
           justify-content: flex-start
+          .border-bottom
+            transition: all 0.2s
+            height: 3px
+            background: #EC0F44
+            position: absolute
+            bottom: 0
           li.active-nav-link
             a
               color: #EC0F44 !important
-            &:before
-              width: 100%
-              bottom: 2px !important
+          //   &:before
+          //     width: 100%
+          //     bottom: 2px !important
           li.compare-nav-link
             &:hover
               a
@@ -168,25 +176,25 @@ header
             padding: 15px 20px
             position: relative
             overflow: hidden
-            &:before
-              position: absolute
-              content: ""
-              width: 0%
-              height: 2px
-              right: 0
-              display: block
-              background: #EC0F44
-              left: auto
-              bottom: 2px
-              transition: width 0.3s linear 0s 
+            // &:before
+            //   position: absolute
+            //   content: ""
+            //   width: 0%
+            //   height: 2px
+            //   right: 0
+            //   display: block
+            //   background: #EC0F44
+            //   left: auto
+            //   bottom: 2px
+            //   transition: width 0.3s linear 0s 
             &:hover
               color: #EC0F44 !important
               a
                 color: #EC0F44
-              &:before
-                left: 0
-                width: 100%
-                right: auto 
+              // &:before
+              //   left: 0
+              //   width: 100%
+              //   right: auto 
             a
               display: flex
               padding: 15px 10px
@@ -647,6 +655,7 @@ div.slick-active.slick-center
   display: flex
   justify-content: center
   padding: 40px 0
+
   li.slick-active
     button
       position: relative
@@ -670,6 +679,7 @@ div.slick-active.slick-center
       margin: 0 5px
       border-radius: 3px
 footer
+  background: #F8F9FA
   .container
     .footer-menu_section
       padding: 40px 0
