@@ -190,7 +190,7 @@ header .container .top-header-menu_section nav.top-header-nav ul {
           justify-content: flex-start;
 }
 
-header .container .top-header-menu_section nav.top-header-nav ul .border-bottom {
+header .container .top-header-menu_section nav.top-header-nav ul .border-bottomm {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   height: 3px;

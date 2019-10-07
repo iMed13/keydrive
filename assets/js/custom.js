@@ -35,18 +35,19 @@ $( document ).ready(function() {
     var width = $(".active-nav-link").outerWidth();
     var offset = $(".active-nav-link").position();
     var left= offset.left; 
-    $("nav.top-header-nav").children("ul").append("<div class='border-bottom'><div>");
-    $(".border-bottom").css({"width" : width , "left" : left});
+    $("nav.top-header-nav").children("ul").append("<div class='border-bottomm'><div>");
+    $(".border-bottomm").css({"width" : width , "left" : left});
     $(".top-header-nav").children("ul").find("li").not(".compare-nav-link").mouseover("on", function(){
         var width = $(this).outerWidth();
         var offset = $(this).position();
         var left= offset.left; 
-        $(".border-bottom").animate({"width" : width , "left" : left},50, "linear");
+        $(".border-bottomm").animate({"width" : width , "left" : left},50, "linear");
+    
     })
     $(".top-header-nav").mouseleave("on", function(){
         var width = $(".active-nav-link").outerWidth();
         var offset = $(".active-nav-link").position();
-        var left= offset.left; 
-        $(".border-bottom").animate({"width" : width , "left" : left},50, "linear");
+        var left= offset.left;
+        $(".border-bottomm").animate({"width" : width , "left" : left},50, "linear");
     })
 });
