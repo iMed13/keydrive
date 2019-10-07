@@ -988,6 +988,15 @@ main .container .popular-manufacturer .slick-arrow, main .container .new-added-v
   outline: none;
 }
 
+main .container .popular-manufacturer .slick-arrow .fas, main .container .new-added-video .slick-arrow .fas, main .container .new-car-models .slick-arrow .fas {
+  color: #CED4DA;
+  font-size: 30px;
+}
+
+main .container .popular-manufacturer .slick-arrow .fas:hover, main .container .new-added-video .slick-arrow .fas:hover, main .container .new-car-models .slick-arrow .fas:hover {
+  color: red;
+}
+
 main .container .popular-manufacturer .slick-prev, main .container .new-added-video .slick-prev, main .container .new-car-models .slick-prev {
   right: 50px;
 }
