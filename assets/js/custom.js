@@ -1,7 +1,7 @@
 
-$( document ).ready(function() {
-    $("#top-header-background-video")[0].play(); 
-});
+// $( document ).ready(function() {
+//     $("#top-header-background-video")[0].play(); 
+// });
 $("#top-header-background-video")[0].autoplay = true;
 $("#top-header-background-video")[0].loop = true;
 // $("#top-header-background-video")[0].currentTime = "100"
@@ -14,3 +14,4 @@ $(".filter-input").find("input").blur(function() {
     $(this).attr("placeholder", globalPlaceholder);  
 })
 // $(".slick-active.slick-center").first().siblings().css("width","360px")
+$(".slick-dots").children("li").find("button").text("");

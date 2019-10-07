@@ -405,6 +405,205 @@ main {
   }
 }
 
+@media (max-width: 767px) {
+  main .filterbrand {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .filterbrand {
+    width: 100%;
+  }
+}
+
+main .filterbrand button {
+  border: 1px solid #EC0F44;
+  background: transparent;
+}
+
+main .filterbrand button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 40px;
+  font-size: 15px;
+  font-family: "BPG Arial", sans-serif;
+  color: #0E1119;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  main .filterbrand button {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+main .new-car-models-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  main .new-car-models-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .new-car-models-content .slick-arrow {
+  background: transparent;
+  border: unset;
+  position: absolute;
+  z-index: 9;
+  bottom: 100px;
+  outline: none;
+}
+
+main .new-car-models-content .slick-arrow .fas {
+  color: #CED4DA;
+}
+
+main .new-car-models-content .slick-arrow .fas:hover {
+  color: red;
+}
+
+main .new-car-models-content .slick-prev {
+  left: -120px;
+}
+
+main .new-car-models-content .slick-prev .fas {
+  font-size: 30px;
+}
+
+main .new-car-models-content .slick-next {
+  left: -80px;
+}
+
+main .new-car-models-content .slick-next .fas {
+  font-size: 30px;
+}
+
+main .new-car-models-content .car-models-text-content {
+  width: 670px;
+  padding: 50px 0;
+}
+
+@media (max-width: 1200px) {
+  main .new-car-models-content .car-models-text-content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+}
+
+main .new-car-models-content .car-models-text-content p {
+  padding-left: 115px;
+  padding-right: 40px;
+  font-size: 15px;
+  color: #ADB5BD;
+  font-family: "BPG Arial", sans-serif;
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  main .new-car-models-content .car-models-text-content p {
+    padding: 0 15px  !important;
+  }
+}
+
+@media (max-width: 767px) {
+  main .new-car-models-content .car-models-text-content p {
+    font-size: 12px;
+  }
+}
+
+main .new-car-models-content .car-models-text-content p span {
+  color: red;
+  font-size: 20px;
+}
+
+main .new-car-models-content .car-models-text-content .filterbrand {
+  padding: 40px 40px 40px 115px;
+}
+
+@media (max-width: 992px) {
+  main .new-car-models-content .car-models-text-content .filterbrand {
+    display: none;
+  }
+}
+
+main .new-car-models-content .car-models-text-content .filterbrand button {
+  background: #EC0F44;
+}
+
+main .new-car-models-content .car-models-text-content .filterbrand button a {
+  color: #fff;
+}
+
+main .new-car-models-content .car-models-slider-content {
+  width: 50vw;
+}
+
+@media (max-width: 1200px) {
+  main .new-car-models-content .car-models-slider-content {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0 15px;
+  }
+}
+
+main .new-car-models-content .car-models-slider-content .slick-dots {
+  position: absolute;
+  bottom: -350px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .new-car-models-content .car-models-slider-content .slick-track {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media (max-width: 500px) {
+  main .new-car-models-content .car-models-slider-content .each-car-model.slick-active {
+    width: 60% !important;
+    height: 240px;
+  }
+}
+
+main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide {
+  padding: 5px;
+}
+
+main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_image-content {
+  overflow: hidden;
+}
+
+main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_text-content h4 {
+  font-size: 17px;
+}
+
 main .container .filter-menu-content form {
   background: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -689,7 +888,7 @@ main .container .manufacture-section-title {
   padding-top: 90px;
 }
 
-main .container .popular-manufacturer .manufacture-section-title, main .container .popular-manufacturer .new-added-video-title, main .container .new-added-video .manufacture-section-title, main .container .new-added-video .new-added-video-title {
+main .container .popular-manufacturer .manufacture-section-title, main .container .popular-manufacturer .new-added-video-title, main .container .popular-manufacturer .new-car-models-title, main .container .new-added-video .manufacture-section-title, main .container .new-added-video .new-added-video-title, main .container .new-added-video .new-car-models-title, main .container .new-car-models .manufacture-section-title, main .container .new-car-models .new-added-video-title, main .container .new-car-models .new-car-models-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,7 +901,7 @@ main .container .popular-manufacturer .manufacture-section-title, main .containe
 }
 
 @media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title, main .container .popular-manufacturer .new-added-video-title, main .container .new-added-video .manufacture-section-title, main .container .new-added-video .new-added-video-title {
+  main .container .popular-manufacturer .manufacture-section-title, main .container .popular-manufacturer .new-added-video-title, main .container .popular-manufacturer .new-car-models-title, main .container .new-added-video .manufacture-section-title, main .container .new-added-video .new-added-video-title, main .container .new-added-video .new-car-models-title, main .container .new-car-models .manufacture-section-title, main .container .new-car-models .new-added-video-title, main .container .new-car-models .new-car-models-title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -711,7 +910,7 @@ main .container .popular-manufacturer .manufacture-section-title, main .containe
   }
 }
 
-main .container .popular-manufacturer .manufacture-section-title .title-leftside-content, main .container .popular-manufacturer .new-added-video-title .title-leftside-content, main .container .new-added-video .manufacture-section-title .title-leftside-content, main .container .new-added-video .new-added-video-title .title-leftside-content {
+main .container .popular-manufacturer .manufacture-section-title .title-leftside-content, main .container .popular-manufacturer .new-added-video-title .title-leftside-content, main .container .popular-manufacturer .new-car-models-title .title-leftside-content, main .container .new-added-video .manufacture-section-title .title-leftside-content, main .container .new-added-video .new-added-video-title .title-leftside-content, main .container .new-added-video .new-car-models-title .title-leftside-content, main .container .new-car-models .manufacture-section-title .title-leftside-content, main .container .new-car-models .new-added-video-title .title-leftside-content, main .container .new-car-models .new-car-models-title .title-leftside-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,12 +920,12 @@ main .container .popular-manufacturer .manufacture-section-title .title-leftside
 }
 
 @media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content, main .container .popular-manufacturer .new-added-video-title .title-leftside-content, main .container .new-added-video .manufacture-section-title .title-leftside-content, main .container .new-added-video .new-added-video-title .title-leftside-content {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content, main .container .popular-manufacturer .new-added-video-title .title-leftside-content, main .container .popular-manufacturer .new-car-models-title .title-leftside-content, main .container .new-added-video .manufacture-section-title .title-leftside-content, main .container .new-added-video .new-added-video-title .title-leftside-content, main .container .new-added-video .new-car-models-title .title-leftside-content, main .container .new-car-models .manufacture-section-title .title-leftside-content, main .container .new-car-models .new-added-video-title .title-leftside-content, main .container .new-car-models .new-car-models-title .title-leftside-content {
     width: 100%;
   }
 }
 
-main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section {
+main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .new-car-models-title .title-leftside-content .accounting_section, main .container .new-car-models .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-car-models .new-added-video-title .title-leftside-content .accounting_section, main .container .new-car-models .new-car-models-title .title-leftside-content .accounting_section {
   margin-right: 10px;
   padding: 15px 0;
   font-family: 'Roboto', sans-serif;
@@ -738,7 +937,7 @@ main .container .popular-manufacturer .manufacture-section-title .title-leftside
 }
 
 @media (max-width: 767px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .new-car-models-title .title-leftside-content .accounting_section, main .container .new-car-models .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-car-models .new-added-video-title .title-leftside-content .accounting_section, main .container .new-car-models .new-car-models-title .title-leftside-content .accounting_section {
     padding: unset;
     -webkit-transform: translateX(-20px);
             transform: translateX(-20px);
@@ -747,18 +946,18 @@ main .container .popular-manufacturer .manufacture-section-title .title-leftside
 }
 
 @media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .new-car-models-title .title-leftside-content .accounting_section, main .container .new-car-models .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-car-models .new-added-video-title .title-leftside-content .accounting_section, main .container .new-car-models .new-car-models-title .title-leftside-content .accounting_section {
     font-size: 80px;
   }
 }
 
 @media (max-width: 767px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .accounting_section, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .accounting_section, main .container .new-added-video .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-added-video .new-added-video-title .title-leftside-content .accounting_section, main .container .new-added-video .new-car-models-title .title-leftside-content .accounting_section, main .container .new-car-models .manufacture-section-title .title-leftside-content .accounting_section, main .container .new-car-models .new-added-video-title .title-leftside-content .accounting_section, main .container .new-car-models .new-car-models-title .title-leftside-content .accounting_section {
     font-size: 70px;
   }
 }
 
-main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h2 {
+main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-car-models-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .new-car-models-title .title-leftside-content .titlewithslug h2 {
   font-size: 24px;
   font-family: "BPG Arial Caps", sans-serif;
   color: #0E1119;
@@ -766,63 +965,36 @@ main .container .popular-manufacturer .manufacture-section-title .title-leftside
 }
 
 @media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h2 {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-car-models-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .new-car-models-title .title-leftside-content .titlewithslug h2 {
     font-size: 19px;
   }
 }
 
 @media (max-width: 767px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h2 {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-added-video .new-car-models-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .manufacture-section-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .new-added-video-title .title-leftside-content .titlewithslug h2, main .container .new-car-models .new-car-models-title .title-leftside-content .titlewithslug h2 {
     font-size: 16px;
   }
 }
 
-main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h4 {
+main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-car-models-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .new-car-models-title .title-leftside-content .titlewithslug h4 {
   color: #ADB5BD;
   font-size: 18px;
   font-family: "BPG Arial", sans-serif;
 }
 
 @media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h4 {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-car-models-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .new-car-models-title .title-leftside-content .titlewithslug h4 {
     font-size: 15px;
   }
 }
 
 @media (max-width: 767px) {
-  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h4 {
+  main .container .popular-manufacturer .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .popular-manufacturer .new-car-models-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-added-video .new-car-models-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .manufacture-section-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .new-added-video-title .title-leftside-content .titlewithslug h4, main .container .new-car-models .new-car-models-title .title-leftside-content .titlewithslug h4 {
     font-size: 12px;
   }
 }
 
-@media (max-width: 767px) {
-  main .container .popular-manufacturer .manufacture-section-title .filterbrand, main .container .popular-manufacturer .new-added-video-title .filterbrand, main .container .new-added-video .manufacture-section-title .filterbrand, main .container .new-added-video .new-added-video-title .filterbrand {
-    padding: 0 15px;
-  }
-}
-
-@media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title .filterbrand, main .container .popular-manufacturer .new-added-video-title .filterbrand, main .container .new-added-video .manufacture-section-title .filterbrand, main .container .new-added-video .new-added-video-title .filterbrand {
-    width: 100%;
-  }
-}
-
-main .container .popular-manufacturer .manufacture-section-title .filterbrand button, main .container .popular-manufacturer .new-added-video-title .filterbrand button, main .container .new-added-video .manufacture-section-title .filterbrand button, main .container .new-added-video .new-added-video-title .filterbrand button {
-  border: 1px solid #EC0F44;
-  background: transparent;
-  padding: 20px 40px;
-  font-size: 15px;
-  font-family: "BPG Arial", sans-serif;
-}
-
-@media (max-width: 1024px) {
-  main .container .popular-manufacturer .manufacture-section-title .filterbrand button, main .container .popular-manufacturer .new-added-video-title .filterbrand button, main .container .new-added-video .manufacture-section-title .filterbrand button, main .container .new-added-video .new-added-video-title .filterbrand button {
-    width: 100%;
-    margin: 15px 0;
-  }
-}
-
-main .container .popular-manufacturer .slick-arrow, main .container .new-added-video .slick-arrow {
+main .container .popular-manufacturer .slick-arrow, main .container .new-added-video .slick-arrow, main .container .new-car-models .slick-arrow {
   background: transparent;
   border: unset;
   position: absolute;
@@ -831,21 +1003,21 @@ main .container .popular-manufacturer .slick-arrow, main .container .new-added-v
   outline: none;
 }
 
-main .container .popular-manufacturer .slick-prev, main .container .new-added-video .slick-prev {
+main .container .popular-manufacturer .slick-prev, main .container .new-added-video .slick-prev, main .container .new-car-models .slick-prev {
   right: 50px;
 }
 
-main .container .popular-manufacturer .slick-next, main .container .new-added-video .slick-next {
+main .container .popular-manufacturer .slick-next, main .container .new-added-video .slick-next, main .container .new-car-models .slick-next {
   right: 0;
 }
 
-main .container .popular-manufacturer .slick-slide, main .container .new-added-video .slick-slide {
+main .container .popular-manufacturer .slick-slide, main .container .new-added-video .slick-slide, main .container .new-car-models .slick-slide {
   outline: none;
   overflow: hidden;
   margin: 0 15px;
 }
 
-main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4 {
+main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4, main .container .new-car-models .slick-slide .video_text-content h4 {
   color: #0E1119;
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
@@ -855,12 +1027,12 @@ main .container .popular-manufacturer .slick-slide .video_text-content h4, main 
 }
 
 @media (max-width: 500px) {
-  main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4 {
+  main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4, main .container .new-car-models .slick-slide .video_text-content h4 {
     font-size: 13px;
   }
 }
 
-main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p {
+main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p, main .container .new-car-models .slick-slide .video_text-content p {
   color: #ADB5BD;
   font-family: "BPG Arial", sans-serif;
   font-size: 14px;
@@ -868,17 +1040,17 @@ main .container .popular-manufacturer .slick-slide .video_text-content p, main .
 }
 
 @media (max-width: 500px) {
-  main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p {
+  main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p, main .container .new-car-models .slick-slide .video_text-content p {
     font-size: 11px;
   }
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content, main .container .new-added-video .slick-slide .video_image-content {
+main .container .popular-manufacturer .slick-slide .video_image-content, main .container .new-added-video .slick-slide .video_image-content, main .container .new-car-models .slick-slide .video_image-content {
   position: relative;
   height: 200px  !important;
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:after, main .container .new-added-video .slick-slide .video_image-content:after {
+main .container .popular-manufacturer .slick-slide .video_image-content:after, main .container .new-added-video .slick-slide .video_image-content:after, main .container .new-car-models .slick-slide .video_image-content:after {
   content: "";
   position: absolute;
   left: 0;
@@ -888,31 +1060,32 @@ main .container .popular-manufacturer .slick-slide .video_image-content:after, m
   background: rgba(27, 32, 44, 0.35);
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:hover, main .container .new-added-video .slick-slide .video_image-content:hover {
+main .container .popular-manufacturer .slick-slide .video_image-content:hover, main .container .new-added-video .slick-slide .video_image-content:hover, main .container .new-car-models .slick-slide .video_image-content:hover {
   cursor: pointer;
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:hover:after, main .container .new-added-video .slick-slide .video_image-content:hover:after {
+main .container .popular-manufacturer .slick-slide .video_image-content:hover:after, main .container .new-added-video .slick-slide .video_image-content:hover:after, main .container .new-car-models .slick-slide .video_image-content:hover:after {
   display: none;
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:hover img.playbutton, main .container .new-added-video .slick-slide .video_image-content:hover img.playbutton {
+main .container .popular-manufacturer .slick-slide .video_image-content:hover img.playbutton, main .container .new-added-video .slick-slide .video_image-content:hover img.playbutton, main .container .new-car-models .slick-slide .video_image-content:hover img.playbutton {
   opacity: 0;
   -webkit-transform: translate(-50%, -30px);
           transform: translate(-50%, -30px);
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content img.playbutton, main .container .new-added-video .slick-slide .video_image-content img.playbutton {
+main .container .popular-manufacturer .slick-slide .video_image-content img.playbutton, main .container .new-added-video .slick-slide .video_image-content img.playbutton, main .container .new-car-models .slick-slide .video_image-content img.playbutton {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   position: absolute;
+  z-index: 5;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content img.slider_back-image, main .container .new-added-video .slick-slide .video_image-content img.slider_back-image {
+main .container .popular-manufacturer .slick-slide .video_image-content img.slider_back-image, main .container .new-added-video .slick-slide .video_image-content img.slider_back-image, main .container .new-car-models .slick-slide .video_image-content img.slider_back-image {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -921,7 +1094,7 @@ main .container .popular-manufacturer .slick-slide .video_image-content img.slid
      object-position: center center;
 }
 
-main .container .popular-manufacturer .manufacture-section-content, main .container .popular-manufacturer .new-added-video-content, main .container .new-added-video .manufacture-section-content, main .container .new-added-video .new-added-video-content {
+main .container .popular-manufacturer .manufacture-section-content, main .container .popular-manufacturer .new-added-video-content, main .container .new-added-video .manufacture-section-content, main .container .new-added-video .new-added-video-content, main .container .new-car-models .manufacture-section-content, main .container .new-car-models .new-added-video-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,19 +1104,19 @@ main .container .popular-manufacturer .manufacture-section-content, main .contai
 }
 
 @media (max-width: 767px) {
-  main .container .popular-manufacturer .manufacture-section-content, main .container .popular-manufacturer .new-added-video-content, main .container .new-added-video .manufacture-section-content, main .container .new-added-video .new-added-video-content {
+  main .container .popular-manufacturer .manufacture-section-content, main .container .popular-manufacturer .new-added-video-content, main .container .new-added-video .manufacture-section-content, main .container .new-added-video .new-added-video-content, main .container .new-car-models .manufacture-section-content, main .container .new-car-models .new-added-video-content {
     padding: 0 15px;
   }
 }
 
-main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo, main .container .new-added-video .new-added-video-content .manufacture-brand-logo {
+main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo, main .container .new-added-video .new-added-video-content .manufacture-brand-logo, main .container .new-car-models .manufacture-section-content .manufacture-brand-logo, main .container .new-car-models .new-added-video-content .manufacture-brand-logo {
   min-width: 10%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 @media (max-width: 992px) {
-  main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo, main .container .new-added-video .new-added-video-content .manufacture-brand-logo {
+  main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo, main .container .new-added-video .new-added-video-content .manufacture-brand-logo, main .container .new-car-models .manufacture-section-content .manufacture-brand-logo, main .container .new-car-models .new-added-video-content .manufacture-brand-logo {
     width: unset;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -952,12 +1125,12 @@ main .container .popular-manufacturer .manufacture-section-content .manufacture-
 }
 
 @media (max-width: 500px) {
-  main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo, main .container .new-added-video .new-added-video-content .manufacture-brand-logo {
+  main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo, main .container .new-added-video .new-added-video-content .manufacture-brand-logo, main .container .new-car-models .manufacture-section-content .manufacture-brand-logo, main .container .new-car-models .new-added-video-content .manufacture-brand-logo {
     width: 50% !important;
   }
 }
 
-main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a {
+main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a, main .container .new-car-models .manufacture-section-content .manufacture-brand-logo a, main .container .new-car-models .new-added-video-content .manufacture-brand-logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,11 +1148,11 @@ main .container .popular-manufacturer .manufacture-section-content .manufacture-
   transition: ease-in-out 0.4s;
 }
 
-main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a img, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a img, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a img, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a img {
+main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a img, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a img, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a img, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a img, main .container .new-car-models .manufacture-section-content .manufacture-brand-logo a img, main .container .new-car-models .new-added-video-content .manufacture-brand-logo a img {
   width: 60px;
 }
 
-main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a:hover, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a:hover, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a:hover, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a:hover {
+main .container .popular-manufacturer .manufacture-section-content .manufacture-brand-logo a:hover, main .container .popular-manufacturer .new-added-video-content .manufacture-brand-logo a:hover, main .container .new-added-video .manufacture-section-content .manufacture-brand-logo a:hover, main .container .new-added-video .new-added-video-content .manufacture-brand-logo a:hover, main .container .new-car-models .manufacture-section-content .manufacture-brand-logo a:hover, main .container .new-car-models .new-added-video-content .manufacture-brand-logo a:hover {
   background: #EC0F44;
 }
 
@@ -1049,6 +1222,10 @@ footer .container .footer-menu_section {
   footer .container .footer-menu_section {
     padding: 35px 15px;
   }
+}
+
+footer .container .footer-menu_section .footer-logo img {
+  width: 90px;
 }
 
 @media (max-width: 767px) {

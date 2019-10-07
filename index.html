@@ -30,6 +30,7 @@
                 left: 0;
             }
         }
+
         @keyframes compareleft {
             0% {
                 transform: translate(-8px, -3px);
@@ -39,6 +40,7 @@
                 transform: translate(0px, -3px);
             }
         }
+
         @keyframes compareright {
             0% {
                 transform: translate(8px, 3px);
@@ -52,7 +54,7 @@
 </head>
 
 <body>
-    <!-- header section start here -->
+    <!-- header section is starting here -->
     <header>
         <!-- background IMAGE section -->
         <section class="top-header-background  image-background">
@@ -62,7 +64,7 @@
 
         <!-- background VIDEO section -->
         <section class="top-header-background video-background">
-            <video id="top-header-background-video">
+            <video id="top-header-background-video" autoplay>
                 <source src="assets/media/backgroun.webm" type="video/mp4">
             </video>
         </section>
@@ -80,9 +82,9 @@
                         <li><a href="#">კონტაქტი</a></li>
                         <li class="compare-nav-link">
                             <a href="#">
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <i class="fas fa-long-arrow-alt-left"></i>
-                                     შედარება
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <i class="fas fa-long-arrow-alt-left"></i>
+                                შედარება
                             </a>
                         </li>
                     </ul>
@@ -111,10 +113,10 @@
     </header>
     <!-- header section ending -->
 
-    <!-- main section start here -->
+    <!-- main section is starting here -->
     <main>
+        <!-- filter section -->
         <section class="container">
-            <!-- filter section -->
             <div class="filter-menu-content">
                 <form action="">
                     <div class="filter-form-title">
@@ -200,10 +202,11 @@
                     </div>
                 </form>
             </div>
-            <!-- filter section ending -->
         </section>
+        <!-- filter section ending -->
+
+        <!-- popular manufacturer section-->
         <section class="container">
-            <!-- popular manufacturer section-->
             <div class="popular-manufacturer">
                 <div class="manufacture-section-title">
                     <div class="title-leftside-content">
@@ -214,7 +217,7 @@
                         </div>
                     </div>
                     <div class="filterbrand">
-                        <button>ყველა ბრენდი</button>
+                        <button> <a href="#">ყველა ბრენდი</a> </button>
                     </div>
                 </div>
                 <div class="manufacture-section-content">
@@ -304,17 +307,18 @@
                     <!-- each popular brand section ending -->
                 </div>
             </div>
-            <!-- popular manufacturer section ending-->
         </section>
-        <section style="background: #F8F9FA; padding-bottom: 40px">
+        <!-- popular manufacturer section ending-->
+
+        <!-- new added video section -->
+        <section style="background: #F8F9FA; padding-bottom: 40px; margin: 40px 0">
             <section class="container">
-                <!-- new added video section-->
                 <div class="new-added-video">
                     <div class="new-added-video-title">
                         <div class="title-leftside-content">
                             <div class="accounting_section">02</div>
                             <div class="titlewithslug">
-                                <h2>პოპულარული მოდელები</h2>
+                                <h2>პოპულარული ვიდეოები</h2>
                                 <h4>მომხმარებლების მიერ ხშირად მოძებნილი მწარმოებლები</h4>
                             </div>
                         </div>
@@ -397,18 +401,153 @@
                         </div>
                     </div>
                 </div>
-                <!--  new added video section ending-->
             </section>
         </section>
+        <!--  new added video section ending-->
+
+        <!-- new cars model section-->
+        <section class="container">
+            <div class="new-car-models">
+                <div class="new-car-models-title">
+                    <div class="title-leftside-content">
+                        <div class="accounting_section">03</div>
+                        <div class="titlewithslug">
+                            <h2>პოპულარული მოდელები</h2>
+                            <h4>მომხმარებლების მიერ ხშირად მოძებნილი მწარმოებლები</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-car-models-content">
+            <div class="car-models-text-content">
+                <div class=" slider-for">
+                    <div>
+                        <p>
+                            <span>1</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
+                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>2</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
+                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>3</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
+                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>4</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
+                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>5</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
+                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>6</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
+                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
+                        </p>
+                    </div>
+                </div>
+                <div class="filterbrand">
+                    <button> <a href="#">ყველა ბრენდი</a> </button>
+                </div>
+            </div>
+            <div class="car-models-slider-content slider-nav">
+                <!-- slider each  video -->
+                <div class="each-car-model">
+                    <div class="video_image-content">
+                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                    </div>
+                    <div class="video_text-content">
+                        <h4>Land Rover Discovery Sport 2020</h4>
+                    </div>
+                </div>
+                <!-- slider each  video ending-->
+                <!-- slider each  video -->
+                <div class="each-car-model">
+                    <div class="video_image-content">
+                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                    </div>
+                    <div class="video_text-content">
+                        <h4>Land Rover Discovery Sport 2020</h4>
+                    </div>
+                </div>
+                <!-- slider each  video ending-->
+                <!-- slider each  video -->
+                <div class="each-car-model">
+                    <div class="video_image-content">
+                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                    </div>
+                    <div class="video_text-content">
+                        <h4>Land Rover Discovery Sport 2020</h4>
+                    </div>
+                </div>
+                <!-- slider each  video ending-->
+                <!-- slider each  video -->
+                <div class="each-car-model">
+                    <div class="video_image-content">
+                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                    </div>
+                    <div class="video_text-content">
+                        <h4>Land Rover Discovery Sport 2020</h4>
+                    </div>
+                </div>
+                <!-- slider each  video ending-->
+                <!-- slider each  video -->
+                <div class="each-car-model">
+                    <div class="video_image-content">
+                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                    </div>
+                    <div class="video_text-content">
+                        <h4>Land Rover Discovery Sport 2020</h4>
+                    </div>
+                </div>
+                <!-- slider each  video ending-->
+                <!-- slider each  video -->
+                <div class="each-car-model">
+                    <div class="video_image-content">
+                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                    </div>
+                    <div class="video_text-content">
+                        <h4>Land Rover Discovery Sport 2020</h4>
+                    </div>
+                </div>
+                <!-- slider each  video ending-->
+            </div>
+        </section>
+        <!-- new cars model section ending-->
     </main>
     <!-- main section ending -->
 
-    <!-- footer section start here -->
+    <!-- footer section is starting here -->
     <footer>
         <section class="container">
             <!-- footer menu -->
             <div class="footer-menu_section">
-                <div class="footer-logo"><img src="assets/media/logo.png" alt=""></div>
+                <div class="footer-logo"><img src="assets/media/footerlogo.png" alt=""></div>
                 <nav class="footer-nav">
                     <ul>
                         <li><a href="#">ჩვენ შესახებ</a></li>
@@ -424,6 +563,79 @@
 
     <!-- SCRIPTS -->
     <script>
+        
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            fade: false,
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+
+                        }
+                    }
+                ]
+        });
+        $('.slider-nav').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            // dots: true,
+            focusOnSelect: true,
+            // centerMode: true,
+            responsive: [
+                {
+                    
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+
+                    }
+                },
+                {
+                    
+                    breakpoint: 700,
+                    settings: {
+                        dots: true,
+                        infinite: false,
+                        centerMode: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+            ],
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fas fa-long-arrow-alt-left'></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fas fa-long-arrow-alt-right'></i></button>"
+        
+        });
+	
         $('.responsive').slick({
             dots: false,
             infinite: false,

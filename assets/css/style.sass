@@ -250,6 +250,117 @@ main
     transform: translateY(-120px)
   +tablet
     transform: translateY(-80px)
+  
+  .filterbrand
+    +tablet
+      padding: 0 15px
+    +laptop_sm
+      width: 100%
+    button
+      border: 1px solid #EC0F44
+      background: transparent
+      a
+        display: flex
+        padding: 20px 40px
+        font-size: 15px
+        font-family: "BPG Arial", sans-serif
+        color: #0E1119
+        text-decoration: none
+      +laptop_sm
+        width: 100%
+        margin: 15px 0
+  .new-car-models-content
+    display: flex
+    justify-content: flex-end
+    position: relative
+    +laptop_md
+      flex-direction: column
+    .slick-arrow
+      background: transparent
+      border: unset
+      position: absolute
+      z-index: 9
+      bottom: 100px
+      outline: none
+      .fas
+        color: #CED4DA
+        &:hover
+          color: red
+    .slick-prev
+      left: -120px
+      .fas
+        font-size: 30px
+    .slick-next
+      left: -80px
+      .fas
+        font-size: 30px
+    // .slick-track
+    //   &>:nth-child(1)
+    //     +tablet
+    //       width: 300px !important
+    .car-models-text-content
+      width: 670px
+      // background: red
+      padding: 50px 0
+      +laptop_md
+        order: 2
+        width: 100%
+      p
+        padding-left: 115px
+        padding-right: 40px
+        font-size: 15px
+        color: #ADB5BD
+        font-family: "BPG Arial", sans-serif
+        text-align: justify
+        +laptop_md
+          padding: 0 15px  !important
+        +tablet
+          font-size: 12px
+        span
+          color: red
+          font-size: 20px
+      .filterbrand
+        padding: 40px 40px 40px 115px
+        +laptop
+          display: none
+        button
+          background: #EC0F44
+          a
+            color: #fff
+    .car-models-slider-content
+      width: 50vw
+      // background: blue
+      // padding: 50px 0
+      +laptop_md
+        width: 100%
+        order: 1
+        padding: 0 15px
+      .slick-dots
+        position: absolute
+        bottom: -350px
+        left: 50%
+        transform: translateX(-50%)
+        // background: red
+      .slick-track
+        display: inline-flex
+      .each-car-model.slick-active
+        +mobile
+          width: 60% !important
+          height: 240px
+      .each-car-model.slick-slide
+        padding: 5px
+        // height: 240px
+        +tablet
+          // width: unset !important
+        .video_image-content
+          overflow: hidden
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        .video_text-content
+          h4
+            font-size: 17px
   .container
     .filter-menu-content
       form
@@ -381,8 +492,8 @@ main
     .new-added-video
     .manufacture-section-title
       padding-top: 90px
-    .popular-manufacturer, .new-added-video
-      .manufacture-section-title, .new-added-video-title
+    .popular-manufacturer, .new-added-video, .new-car-models
+      .manufacture-section-title, .new-added-video-title, .new-car-models-title
         display: flex
         align-items: center
         justify-content: space-between
@@ -429,20 +540,6 @@ main
                 font-size: 15px
               +tablet
                 font-size: 12px
-        .filterbrand
-          +tablet
-            padding: 0 15px
-          +laptop_sm
-            width: 100%
-          button
-            border: 1px solid #EC0F44
-            background: transparent
-            padding: 20px 40px
-            font-size: 15px
-            font-family: "BPG Arial", sans-serif
-            +laptop_sm
-              width: 100%
-              margin: 15px 0
       .slick-arrow
         background: transparent
         border: unset
@@ -501,6 +598,7 @@ main
           img.playbutton
             transition: all 0.4s
             position: absolute
+            z-index: 5
             left: 50%
             top: 50%
             transform: translate(-50%,-50%)
@@ -581,6 +679,8 @@ footer
       +tablet
         padding: 35px 15px
       .footer-logo
+        img
+          width: 90px
         +tablet
           display: none
       nav.footer-nav
