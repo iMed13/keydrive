@@ -624,6 +624,12 @@ main .new-car-models-content .car-models-slider-content {
   }
 }
 
+@media (max-width: 500px) {
+  main .new-car-models-content .car-models-slider-content {
+    padding: unset;
+  }
+}
+
 main .new-car-models-content .car-models-slider-content .slick-dots {
   position: absolute;
   bottom: -300px;
@@ -646,6 +652,13 @@ main .new-car-models-content .car-models-slider-content .slick-track {
 
 main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide {
   padding: 5px;
+  width: 340px !important;
+}
+
+@media (max-width: 500px) {
+  main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide {
+    padding: 15px;
+  }
 }
 
 main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_image-content {
