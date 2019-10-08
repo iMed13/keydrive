@@ -49,6 +49,28 @@
             100% {
                 transform: translate(0px, 3px);
             }
+        } 
+        @keyframes hamburg1 {
+            0% {
+                left: 5px;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                left: 5px;
+                transform: rotate(45deg)
+            }
+        }
+        @keyframes hamburg2 {
+            0% {
+                left: 5px;
+                transform: rotate(-180deg);
+            }
+
+            100% {
+                left: 5px;
+                transform: rotate(-45deg)
+            }
         }
     </style>
 </head>
@@ -489,7 +511,7 @@
                 <!-- slider each  video -->
                 <div class="each-car-model">
                     <div class="video_image-content">
-                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                        <img src="assets/media/slider2.png" class="slider_back-image" alt="">
                     </div>
                     <div class="video_text-content">
                         <h4>Land Rover Discovery Sport 2020</h4>
@@ -499,7 +521,7 @@
                 <!-- slider each  video -->
                 <div class="each-car-model">
                     <div class="video_image-content">
-                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                        <img src="assets/media/slider3.png" class="slider_back-image" alt="">
                     </div>
                     <div class="video_text-content">
                         <h4>Land Rover Discovery Sport 2020</h4>
@@ -509,7 +531,7 @@
                 <!-- slider each  video -->
                 <div class="each-car-model">
                     <div class="video_image-content">
-                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                        <img src="assets/media/slider4.png" class="slider_back-image" alt="">
                     </div>
                     <div class="video_text-content">
                         <h4>Land Rover Discovery Sport 2020</h4>
@@ -519,7 +541,7 @@
                 <!-- slider each  video -->
                 <div class="each-car-model">
                     <div class="video_image-content">
-                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                        <img src="assets/media/slider2.png" class="slider_back-image" alt="">
                     </div>
                     <div class="video_text-content">
                         <h4>Land Rover Discovery Sport 2020</h4>
@@ -529,7 +551,7 @@
                 <!-- slider each  video -->
                 <div class="each-car-model">
                     <div class="video_image-content">
-                        <img src="assets/media/slider1.png" class="slider_back-image" alt="">
+                        <img src="assets/media/slider4.png" class="slider_back-image" alt="">
                     </div>
                     <div class="video_text-content">
                         <h4>Land Rover Discovery Sport 2020</h4>
@@ -620,16 +642,17 @@
                     }
                 },
                 {
-                    
-                    breakpoint: 700,
+                    breakpoint: 500,
                     settings: {
-                        dots: true,
-                        infinite: false,
-                        centerMode: false,
-                        slidesToShow: 2,
+                        arrows: false,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
+                        infinite: true,
+                        centerMode: true,
+                        dots: true
+
                     }
-                },
+                }
             ],
             prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fas fa-long-arrow-alt-left'></i></button>",
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='fas fa-long-arrow-alt-right'></i></button>"

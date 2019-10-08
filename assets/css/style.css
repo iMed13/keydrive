@@ -139,14 +139,56 @@ header .container .top-header-menu_section {
   }
 }
 
+header .container .top-header-menu_section .active-burger span {
+  -webkit-transform-style: preserve-3d !important;
+          transform-style: preserve-3d !important;
+}
+
+header .container .top-header-menu_section .active-burger > :nth-child(1) {
+  top: 18px !important;
+  -webkit-animation: hamburg1 0.45s  !important;
+          animation: hamburg1 0.45s  !important;
+  -webkit-animation-delay: 0.7s !important;
+          animation-delay: 0.7s !important;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  left: 5px;
+}
+
+header .container .top-header-menu_section .active-burger > :nth-child(2) {
+  top: 18px !important;
+  opacity: 0;
+  width: 0;
+}
+
+header .container .top-header-menu_section .active-burger > :nth-child(3) {
+  top: 18px !important;
+  -webkit-animation: hamburg2 0.45s  !important;
+          animation: hamburg2 0.45s  !important;
+  -webkit-animation-delay: 0.7s !important;
+          animation-delay: 0.7s !important;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  left: 5px;
+}
+
 header .container .top-header-menu_section .top-header-burger {
   display: none;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   background: #fff;
   padding: 10px;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -158,12 +200,33 @@ header .container .top-header-menu_section .top-header-burger {
 }
 
 header .container .top-header-menu_section .top-header-burger span {
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 2px;
-  width: 100%;
+  border-radius: 15px;
+  width: calc(100% - 10px);
   background: #1B202C;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header .container .top-header-menu_section .top-header-burger > :nth-child(1) {
+  top: 10px;
+}
+
+header .container .top-header-menu_section .top-header-burger > :nth-child(2) {
+  top: 20px;
+}
+
+header .container .top-header-menu_section .top-header-burger > :nth-child(3) {
+  top: calc(100% - 10px);
 }
 
 header .container .top-header-menu_section nav.top-header-nav {
@@ -415,6 +478,9 @@ main .filterbrand button a {
   font-size: 15px;
   font-family: "BPG Arial", sans-serif;
   color: #0E1119;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
 }
 
@@ -491,6 +557,12 @@ main .new-car-models-content .car-models-text-content {
   }
 }
 
+@media (max-width: 767px) {
+  main .new-car-models-content .car-models-text-content {
+    padding: 15px 0 50px 0;
+  }
+}
+
 main .new-car-models-content .car-models-text-content p {
   padding-left: 115px;
   padding-right: 40px;
@@ -533,6 +605,9 @@ main .new-car-models-content .car-models-text-content .filterbrand button {
 
 main .new-car-models-content .car-models-text-content .filterbrand button a {
   color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .new-car-models-content .car-models-slider-content {
@@ -551,7 +626,7 @@ main .new-car-models-content .car-models-slider-content {
 
 main .new-car-models-content .car-models-slider-content .slick-dots {
   position: absolute;
-  bottom: -350px;
+  bottom: -300px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -565,7 +640,6 @@ main .new-car-models-content .car-models-slider-content .slick-track {
 
 @media (max-width: 500px) {
   main .new-car-models-content .car-models-slider-content .each-car-model.slick-active {
-    width: 60% !important;
     height: 240px;
   }
 }
@@ -576,6 +650,12 @@ main .new-car-models-content .car-models-slider-content .each-car-model.slick-sl
 
 main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_image-content {
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_image-content {
+    height: 200px;
+  }
 }
 
 main .new-car-models-content .car-models-slider-content .each-car-model.slick-slide .video_image-content img {
@@ -735,6 +815,32 @@ main .container .filter-menu-content form .filter-form-content {
   }
 }
 
+main .container .filter-menu-content form .filter-form-content ._first-group .group-content {
+  position: relative;
+}
+
+main .container .filter-menu-content form .filter-form-content ._first-group .group-content:after {
+  content: "\f0dd";
+  color: #ADB5BD;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  position: absolute;
+  right: 40px;
+  top: calc(50% + 15px - 0.5rem);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+  pointer-events: none;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  main .container .filter-menu-content form .filter-form-content ._first-group .group-content:after {
+    top: 50% !important;
+    right: 20px;
+  }
+}
+
 main .container .filter-menu-content form .filter-form-content .filter-form-group {
   width: 100%;
   display: -webkit-box;
@@ -775,6 +881,12 @@ main .container .filter-menu-content form .filter-form-content .filter-form-grou
   color: #ADB5BD;
 }
 
+main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content select, main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content .filter-input input {
   outline: none;
   border: none;
@@ -802,6 +914,10 @@ main .container .filter-menu-content form .filter-form-content .filter-form-grou
 
 main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content .filter-input input {
   width: calc(50% - 8px);
+}
+
+main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content .filter-input input:focus, main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content .filter-input input:not(:focus) {
+  opacity: 1 !important;
 }
 
 main .container .filter-menu-content form .filter-form-content .filter-form-group .group-content .filter-input input::-webkit-input-placeholder {

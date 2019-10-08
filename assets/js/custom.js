@@ -51,3 +51,7 @@ $( document ).ready(function() {
         $(".border-bottomm").animate({"width" : width , "left" : left},50, "linear");
     })
 });
+
+$(".top-header-burger").click("on", function(){
+    $(this).toggleClass("active-burger");
+})
