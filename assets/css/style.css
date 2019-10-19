@@ -520,7 +520,7 @@ main .new-car-models-content .slick-arrow {
 }
 
 main .new-car-models-content .slick-arrow .fas {
-  color: #CED4DA;
+  color: #919aa2;
 }
 
 main .new-car-models-content .slick-arrow .fas:hover {
@@ -628,20 +628,6 @@ main .new-car-models-content .car-models-slider-content {
   main .new-car-models-content .car-models-slider-content {
     padding: unset;
   }
-}
-
-main .new-car-models-content .car-models-slider-content .slick-dots {
-  position: absolute;
-  bottom: -300px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-main .new-car-models-content .car-models-slider-content .slick-track {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 @media (max-width: 500px) {
@@ -1108,39 +1094,55 @@ main .container .popular-manufacturer .manufacture-section-title .title-leftside
   }
 }
 
-main .container .popular-manufacturer .slick-arrow, main .container .new-added-video .slick-arrow, main .container .new-car-models .slick-arrow {
+main .container .popular-manufacturer .owl-nav, main .container .new-added-video .owl-nav, main .container .new-car-models .owl-nav {
   background: transparent;
   border: unset;
   position: absolute;
   z-index: 9;
   top: -100px;
   outline: none;
-}
-
-main .container .popular-manufacturer .slick-arrow .fas, main .container .new-added-video .slick-arrow .fas, main .container .new-car-models .slick-arrow .fas {
-  color: #CED4DA;
-  font-size: 30px;
-}
-
-main .container .popular-manufacturer .slick-arrow .fas:hover, main .container .new-added-video .slick-arrow .fas:hover, main .container .new-car-models .slick-arrow .fas:hover {
-  color: red;
-}
-
-main .container .popular-manufacturer .slick-prev, main .container .new-added-video .slick-prev, main .container .new-car-models .slick-prev {
-  right: 50px;
-}
-
-main .container .popular-manufacturer .slick-next, main .container .new-added-video .slick-next, main .container .new-car-models .slick-next {
   right: 0;
 }
 
-main .container .popular-manufacturer .slick-slide, main .container .new-added-video .slick-slide, main .container .new-car-models .slick-slide {
-  outline: none;
-  overflow: hidden;
-  margin: 0 15px;
+@media (max-width: 500px) {
+  main .container .popular-manufacturer .owl-nav, main .container .new-added-video .owl-nav, main .container .new-car-models .owl-nav {
+    display: none;
+  }
 }
 
-main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4, main .container .new-car-models .slick-slide .video_text-content h4 {
+main .container .popular-manufacturer .owl-nav button, main .container .new-added-video .owl-nav button, main .container .new-car-models .owl-nav button {
+  outline: none !important;
+}
+
+main .container .popular-manufacturer .owl-nav button .fas, main .container .new-added-video .owl-nav button .fas, main .container .new-car-models .owl-nav button .fas {
+  color: #ADB5BD;
+  font-size: 30px;
+}
+
+main .container .popular-manufacturer .owl-nav button:hover, main .container .new-added-video .owl-nav button:hover, main .container .new-car-models .owl-nav button:hover {
+  background: unset !important;
+}
+
+@media (max-width: 500px) {
+  main .container .popular-manufacturer .owl-item.active, main .container .new-added-video .owl-item.active, main .container .new-car-models .owl-item.active {
+    width: 300px !important;
+  }
+}
+
+main .container .popular-manufacturer .item, main .container .new-added-video .item, main .container .new-car-models .item {
+  outline: none;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+@media (max-width: 500px) {
+  main .container .popular-manufacturer .item, main .container .new-added-video .item, main .container .new-car-models .item {
+    padding-left: 10px;
+    margin: unset !important;
+  }
+}
+
+main .container .popular-manufacturer .item .video_text-content h4, main .container .new-added-video .item .video_text-content h4, main .container .new-car-models .item .video_text-content h4 {
   color: #0E1119;
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
@@ -1150,12 +1152,12 @@ main .container .popular-manufacturer .slick-slide .video_text-content h4, main 
 }
 
 @media (max-width: 500px) {
-  main .container .popular-manufacturer .slick-slide .video_text-content h4, main .container .new-added-video .slick-slide .video_text-content h4, main .container .new-car-models .slick-slide .video_text-content h4 {
+  main .container .popular-manufacturer .item .video_text-content h4, main .container .new-added-video .item .video_text-content h4, main .container .new-car-models .item .video_text-content h4 {
     font-size: 13px;
   }
 }
 
-main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p, main .container .new-car-models .slick-slide .video_text-content p {
+main .container .popular-manufacturer .item .video_text-content p, main .container .new-added-video .item .video_text-content p, main .container .new-car-models .item .video_text-content p {
   color: #ADB5BD;
   font-family: "BPG Arial", sans-serif;
   font-size: 14px;
@@ -1163,17 +1165,17 @@ main .container .popular-manufacturer .slick-slide .video_text-content p, main .
 }
 
 @media (max-width: 500px) {
-  main .container .popular-manufacturer .slick-slide .video_text-content p, main .container .new-added-video .slick-slide .video_text-content p, main .container .new-car-models .slick-slide .video_text-content p {
+  main .container .popular-manufacturer .item .video_text-content p, main .container .new-added-video .item .video_text-content p, main .container .new-car-models .item .video_text-content p {
     font-size: 11px;
   }
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content, main .container .new-added-video .slick-slide .video_image-content, main .container .new-car-models .slick-slide .video_image-content {
+main .container .popular-manufacturer .item .video_image-content, main .container .new-added-video .item .video_image-content, main .container .new-car-models .item .video_image-content {
   position: relative;
   height: 200px  !important;
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:after, main .container .new-added-video .slick-slide .video_image-content:after, main .container .new-car-models .slick-slide .video_image-content:after {
+main .container .popular-manufacturer .item .video_image-content:after, main .container .new-added-video .item .video_image-content:after, main .container .new-car-models .item .video_image-content:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1183,32 +1185,33 @@ main .container .popular-manufacturer .slick-slide .video_image-content:after, m
   background: rgba(27, 32, 44, 0.35);
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:hover, main .container .new-added-video .slick-slide .video_image-content:hover, main .container .new-car-models .slick-slide .video_image-content:hover {
+main .container .popular-manufacturer .item .video_image-content:hover, main .container .new-added-video .item .video_image-content:hover, main .container .new-car-models .item .video_image-content:hover {
   cursor: pointer;
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:hover:after, main .container .new-added-video .slick-slide .video_image-content:hover:after, main .container .new-car-models .slick-slide .video_image-content:hover:after {
+main .container .popular-manufacturer .item .video_image-content:hover:after, main .container .new-added-video .item .video_image-content:hover:after, main .container .new-car-models .item .video_image-content:hover:after {
   display: none;
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content:hover img.playbutton, main .container .new-added-video .slick-slide .video_image-content:hover img.playbutton, main .container .new-car-models .slick-slide .video_image-content:hover img.playbutton {
+main .container .popular-manufacturer .item .video_image-content:hover img.playbutton, main .container .new-added-video .item .video_image-content:hover img.playbutton, main .container .new-car-models .item .video_image-content:hover img.playbutton {
   opacity: 0;
   -webkit-transform: translate(-50%, -30px);
           transform: translate(-50%, -30px);
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content img.playbutton, main .container .new-added-video .slick-slide .video_image-content img.playbutton, main .container .new-car-models .slick-slide .video_image-content img.playbutton {
+main .container .popular-manufacturer .item .video_image-content img.playbutton, main .container .new-added-video .item .video_image-content img.playbutton, main .container .new-car-models .item .video_image-content img.playbutton {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   position: absolute;
   z-index: 5;
   left: 50%;
   top: 50%;
+  width: 43px !important;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-main .container .popular-manufacturer .slick-slide .video_image-content img.slider_back-image, main .container .new-added-video .slick-slide .video_image-content img.slider_back-image, main .container .new-car-models .slick-slide .video_image-content img.slider_back-image {
+main .container .popular-manufacturer .item .video_image-content img.slider_back-image, main .container .new-added-video .item .video_image-content img.slider_back-image, main .container .new-car-models .item .video_image-content img.slider_back-image {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;

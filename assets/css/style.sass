@@ -327,7 +327,7 @@ main
       bottom: 100px
       outline: none
       .fas
-        color: #CED4DA
+        color: #919aa2
         &:hover
           color: red
     .slick-prev
@@ -385,20 +385,6 @@ main
         padding: 0 15px
       +mobile
         padding: unset 
-      
-      .slick-list.draggable
-        // padding: 0  0 0 280px !important
-        +mobile
-          // padding: unset !important
-      .slick-dots
-        position: absolute
-        bottom: -300px
-        left: 50%
-        transform: translateX(-50%)
-        // background: red
-      .slick-track
-        display: inline-flex
-
       .each-car-model.slick-active
         +mobile
           // width: 60% !important
@@ -626,31 +612,38 @@ main
                 font-size: 15px
               +tablet
                 font-size: 12px
-      .slick-arrow
+      .owl-nav
         background: transparent
         border: unset
         position: absolute
         z-index: 9
         top: -100px
         outline: none
-        .fas
-          color: #CED4DA
-          font-size: 30px
-          &:hover
-            color: red
-      .slick-prev
-        right: 50px
-      .slick-next
         right: 0
+        +mobile
+          display: none
+        button
+          outline: none !important
+          .fas
+            color: #ADB5BD
+            font-size: 30px
+          &:hover
+            background: unset !important
       // .slick-track
       //   &>:nth-child(1)
       //     +tablet
       //       width: 300px !important
-      .slick-slide
+      .owl-item.active
+        +mobile
+          width: 300px !important
+      .item
         outline: none
         overflow: hidden
         // background: red !important
-        margin: 0 15px
+        margin: 0 5px
+        +mobile
+          padding-left:  10px
+          margin: unset !important
         .video_text-content
           h4
             color: #0E1119
@@ -692,6 +685,7 @@ main
             z-index: 5
             left: 50%
             top: 50%
+            width: 43px !important
             transform: translate(-50%,-50%)
           img.slider_back-image
             height: 100%
