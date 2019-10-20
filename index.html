@@ -458,46 +458,7 @@
                             საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
                         </p>
                     </div>
-                    <div>
-                        <p>
-                            <span>2</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
-                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
-                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
-                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>3</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
-                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
-                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
-                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>4</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
-                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
-                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
-                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>5</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
-                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
-                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
-                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>6</span> შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
-                            ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
-                            წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას
-                            საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი.
-                        </p>
-                    </div>
+                    
                 </div>
                 <div class="filterbrand">
                     <button> <a href="#">ყველა ბრენდი</a> </button>
@@ -618,29 +579,50 @@
     <script src="assets/owl/assets/vendors/jquery.min.js"></script>
     <script src="assets/owl/assets/owlcarousel/owl.carousel.js"></script>
     <script>
-            $(document).ready(function () {
-                $(".owl-car-models").owlCarousel({
+            jQuery(document).ready(function ($) {
+                var owsdfsdfl =  $(".owl-car-models").owlCarousel({
                     margin: 10,
                     nav: true,
-                    loop: true,
+                    loop: false,
+                    dots: false,
                     responsive: {
-                        0: {
+                        600: {
                             items: 1
                         },
-                        600: {
-                            items: 2
-                        },
                         1000: {
-                            items: 3
+                            items: 2
                         }
                     }
                 });
+
+                checkClasses();
+                owsdfsdfl.on('translated.owl.carousel', function(event) {
+        checkClasses();
+    });
+    function checkClasses(){
+        // var itemwidth = $(".owl-car-models").find('.owl-item.active').width();
+        // $(".owl-stage").css("transform", "translate3d(-" + itemcount + "px 0px, 0px)");
+        
+        var total = $(".owl-car-models").find('.owl-item.active').length;
+        $(".owl-car-models").find('.owl-item.active').find(".video_text-content").removeClass("active_ittem");
+        $(".owl-car-models").find('.owl-item.active').each(function(index){
+            
+            if (index === 0) {
+                // this is the first one
+                $(this).find(".video_text-content").addClass("active_ittem");
+            }
+        });
+    }
+                // ---------------------------------------------------
                 
+                $(".owl-car-models").find(".owl-prev").html("<i class='fas fa-long-arrow-alt-left'></i>");
+                $(".owl-car-models").find( ".owl-next").html("<i class='fas fa-long-arrow-alt-right'></i>");
                 
                 $(".owl-video").owlCarousel({
                     margin: 10,
                     nav: true,
-                    loop: true,
+                    loop: false,
+                    dots: false,
                     responsive: {
                         0:{
                             items: 1,

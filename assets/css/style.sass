@@ -319,33 +319,60 @@ main
     position: relative
     +laptop_md
       flex-direction: column
-    .slick-arrow
+    .owl-stage-outer
+      padding: 15px 0 15px 2px
+    .owl-nav
       background: transparent
       border: unset
       position: absolute
       z-index: 9
-      bottom: 100px
+      bottom: 50px
       outline: none
-      .fas
-        color: #919aa2
+      left: -100px
+      +mobile
+        display: none
+      button
+        outline: none !important
+        .fas
+          color: #ADB5BD
+          font-size: 30px
         &:hover
-          color: red
-    .slick-prev
-      left: -120px
-      .fas
-        font-size: 30px
-    .slick-next
-      left: -80px
-      .fas
-        font-size: 30px
-    // .slick-track
-    //   &>:nth-child(1)
-    //     +tablet
-    //       width: 300px !important
+          background: unset !important
+    .owl-item.active
+      +mobile
+        width: 250px !important
+    .owl-item
+      width: 340px  !important
+    .item
+      outline: none
+      margin: 0 5px
+      overflow: hidden
+      // background: red !important
+      +mobile
+        padding-left:  10px
+        margin: unset !important
+        
+      .active_ittem
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.26)
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.26)
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.26)
+        background: red
+      .video_text-content
+        padding: 20px
+        h4
+          color: #0E1119
+          font-size: 17px
+          font-family: 'Roboto', sans-serif
+          font-weight: 500
+          padding-top: 15px
+          margin: unset !important
+          
+          +mobile
+            font-size: 13px
     .car-models-text-content
       width: 670px
       // background: red
-      padding: 50px 0
+      // padding: 50px 0
       +laptop_md
         order: 2
         width: 100%
@@ -629,13 +656,9 @@ main
             font-size: 30px
           &:hover
             background: unset !important
-      // .slick-track
-      //   &>:nth-child(1)
-      //     +tablet
-      //       width: 300px !important
       .owl-item.active
         +mobile
-          width: 300px !important
+          width: 250px !important
       .item
         outline: none
         overflow: hidden
@@ -652,6 +675,7 @@ main
             font-weight: 500
             padding-top: 15px
             margin: unset !important
+            
             +mobile
               font-size: 13px
           p
