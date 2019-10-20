@@ -595,21 +595,25 @@
                     }
                 });
 
+                var widddth = 340;
                 checkClasses();
                 owsdfsdfl.on('translated.owl.carousel', function(event) {
+                // widddth+=340;
+                // $(".owl-stage").css("transform", "translate3d(-" + widddth + "px 0px, 0px)");
+                // alert(widddth)
         checkClasses();
     });
     function checkClasses(){
-        // var itemwidth = $(".owl-car-models").find('.owl-item.active').width();
-        // $(".owl-stage").css("transform", "translate3d(-" + itemcount + "px 0px, 0px)");
         
         var total = $(".owl-car-models").find('.owl-item.active').length;
-        $(".owl-car-models").find('.owl-item.active').find(".video_text-content").removeClass("active_ittem");
+        $(".owl-car-models").find('.owl-item.active').removeClass("active_ittem");
+        $(".owl-car-models").find('.owl-item.active').find(".video_text-content").hide();
         $(".owl-car-models").find('.owl-item.active').each(function(index){
             
             if (index === 0) {
                 // this is the first one
-                $(this).find(".video_text-content").addClass("active_ittem");
+                $(this).addClass("active_ittem");
+                $(this).find(".video_text-content").show();
             }
         });
     }
@@ -626,11 +630,9 @@
                     responsive: {
                         0:{
                             items: 1,
-                            loop: true
                         },
                         540: {
                             items: 2,
-                            loop: true
                         },
                         840: {
                             items: 3
